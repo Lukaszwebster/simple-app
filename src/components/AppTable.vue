@@ -46,17 +46,14 @@ const colDefs = ref([
 </script>
 
 <template>
-  <ag-grid-vue
-    :rowData="rowData"
-    :columnDefs="colDefs"
-    style="height: 500px; width: 100vw"
-    class="ag-theme-quartz table"
-  >
+  <ag-grid-vue :rowData="rowData" :columnDefs="colDefs" class="ag-theme-quartz table">
   </ag-grid-vue>
 </template>
 
 <style>
 .table {
-  margin: 0 20px 0 20px;
+  height: 500px;
+  max-width: 100%;
+  width: 100%;
 }
 </style>
