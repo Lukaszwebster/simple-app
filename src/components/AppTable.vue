@@ -4,6 +4,12 @@ import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-quartz.css'
 import { AgGridVue } from 'ag-grid-vue3'
 
+defineProps<{
+  header: string
+  loading: boolean
+  error?: string
+}>()
+
 const rowData = ref([
   {
     mission: 'Voyager',
